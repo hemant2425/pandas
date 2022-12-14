@@ -1,0 +1,63 @@
+import numpy as np 
+#to create array
+arr1 =np.array([1,2,3,4,5,6,7,8])
+print("new array: \n",arr1,"\n")
+#to make 1d to 2d
+arr2 =arr1.reshape(2,4)
+print("convert  1D array to 2d array\n",arr2,"\n")
+
+print("Slice Starting from 3rd value to end\n",arr1[2:],"\n")
+
+print("Slice 0 to 4 index\n",arr1[0:4],"\n")
+
+print("Use negative slicing\n",arr1[-1:],"\n")
+
+arr3 =np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print("Use step value using start and end values is empty\n",arr3[0:2,2],"\n")
+
+print("Use slicing with interval\n",arr1[-4:],"\n")
+
+print("Use slicing a 2D arrays\n",arr3[1,1:4],"\n")
+
+arr4 =np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]])
+print("Slicing 3-D arrays\n",arr4[2,1:4],"\n")
+
+
+arr5 =np.array([1,2,3])
+arr6 =np.array([[1.8,2.5,3.14],[4,5,6]])
+arr7 =np.array([[1,2,3],[4,5,6],[7,8,9]])
+print("finding the data type of an array5\n",arr5.dtype,"\n")
+print("finding the data type of an array6\n",arr6.dtype,"\n")
+print("finding the data type of an array7\n",arr7.dtype,"\n")
+
+arr8 =np.array([1,2,4,6,5,9,78,34,66,1,3,8,9,0])
+print("rever of the data\n",arr8[-7:-3],"\n")
+
+arr9 =np.array([4,7,12])
+arr10 =np.array([5,9,15])
+arr11 =np.concatenate((arr9,arr10))
+print("Use concatenate to join two arrays\n",arr11,"\n")
+
+arr13 =np.array([[4,7],[12,13]])
+arr14 =np.array([[5,9],[13,15]])
+arr12 =np.concatenate((arr13,arr14),axis=1)
+print("Use concatenate() with axis\n",arr12,"\n")
+
+arr15 =np.array([1,2,3])
+arr16 =np.array([4,5,6])
+arr17 =np.stack((arr15,arr16))
+print("Use np.stack() function to Join Arrays\n",arr17,"\n")
+
+arr18 =np.hstack((arr15,arr16))
+print("Use Stacking Along Rows\n",arr18,"\n")
+
+arr19 =np.vstack((arr15,arr16))
+print("Use Stacking Along column\n",arr19,"\n")
+
+arr20 =np.dstack((arr15,arr16))
+print("Use Stacking Along Height \n", arr20,"\n")
+
+arr21 =np.array([1,2,3])
+arr22 =np.array([4,5,6])
+arr23 =np.stack((arr15,arr16),axis=1)
+print("Joining the two arrays along axis\n",arr23,"\n")
